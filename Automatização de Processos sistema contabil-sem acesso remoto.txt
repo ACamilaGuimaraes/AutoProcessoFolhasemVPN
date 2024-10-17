@@ -1,4 +1,4 @@
-#Automação utilizando atalhos
+#Automação para acionar atalhos de teclado
 
 from calendar import c
 import pyautogui
