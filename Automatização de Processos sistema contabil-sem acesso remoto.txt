@@ -1,4 +1,4 @@
-#Automação para acionar atalhos de teclado
+#Automatização para acionar atalhos de teclado
 
 from calendar import c
 import pyautogui
@@ -7,14 +7,14 @@ import time
 pyautogui.alert('O código vai começar, não use nada do seu computador enquanto o código está rodando')
 pyautogui.PAUSE = 0.5
 
-# Abrir o 'Sistema' no meu computador
+# Abrir o 'sistema contábil' no meu computador
 pyautogui.press('winleft')
 pyautogui.write('nome do sistema')
 pyautogui.press('enter')
 
 time.sleep(30)
 
-# Clicar no executar do sistema
+# Clicar no executar do sistema contábil
 pyautogui.hotkey('Left', 'space bar', 'Enter') 
 
 time.sleep(60)
