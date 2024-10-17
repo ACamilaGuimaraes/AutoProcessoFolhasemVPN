@@ -1,0 +1,71 @@
+from calendar import c
+import pyautogui
+import time
+
+pyautogui.alert('O código vai começar, não use nada do seu computador enquanto o código está rodando')
+pyautogui.PAUSE = 0.5
+
+# Abrir o 'Sistema' no meu computador
+pyautogui.press('winleft')
+pyautogui.write('nome do sistema')
+pyautogui.press('enter')
+
+time.sleep(30)
+
+# Clicar no executar do sistema
+pyautogui.hotkey('Left', 'space bar', 'Enter') 
+
+time.sleep(60)
+#Clicar enter quando existir mensagem de backup
+pyautogui.press('enter')
+time.sleep(5)
+
+# Digitar o usuário
+pyautogui.write('login do usuário')
+pyautogui.press('tab')
+
+# Digitar a senha
+pyautogui.write('senha do login')
+pyautogui.press('enter')
+
+time.sleep(50)
+
+# Acessar o menu busca 
+
+pyautogui.hotkey('ctrl', 'r') 
+
+time.sleep(5)
+
+# Digitar o número da empresa no campo 'Empresa'
+pyautogui.write('numero da empresa no sistema')
+pyautogui.press('enter') 
+pyautogui.press('tab', presses=5) 
+
+time.sleep(5)
+
+# Digitar a competência
+pyautogui.write('072024')
+
+time.sleep(10)
+
+#Salvar o arquivo em pdf 
+pyautogui.hotkey('f8')
+
+time.sleep(10)
+
+# Clicar em 'ok' na tela de impressão
+pyautogui.press('enter') 
+
+time.sleep(20)
+
+# Clicar no campo de endereço da pasta
+pyautogui.hotkey('ctrl', 'l')  
+
+# Digitar o endereço da pasta onde vai salvar o arquivo
+pyautogui.write("Endereço da pasta")
+
+pyautogui.press('enter', presses=3)
+
+time.sleep(10)
+
+pyautogui.alert('O código já terminou de rodar, pode usar o seu computador')
