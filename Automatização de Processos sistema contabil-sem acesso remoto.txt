@@ -32,7 +32,7 @@ pyautogui.press('enter')
 
 time.sleep(50)
 
-# Acessar o menu busca 
+# Acessar o menu relatórios
 
 pyautogui.hotkey('ctrl', 'r') 
 
